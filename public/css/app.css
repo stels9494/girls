@@ -11211,12 +11211,12 @@ a.text-dark:focus {
 
 @font-face {
   font-family: Montserrat;
-  src: url("/css/fonts/montserrat/Montserrat-Regular.ttf");
+  src: url(/fonts/Montserrat-Regular.ttf?ee6539921d713482b8ccd4d0d23961bb);
 }
 
 @font-face {
   font-family: Montserrat_Bold;
-  src: url("/css/fonts/montserrat/Montserrat-Bold.ttf");
+  src: url(/fonts/Montserrat-Bold.ttf?ade91f473255991f410f61857696434b);
 }
 
 * {

@@ -13,12 +13,12 @@ $background-input: rgb(27,24,24);
 
 @font-face {
 	font-family: Montserrat;
-	src: url('/css/fonts/montserrat/Montserrat-Regular.ttf');
+	src: url('../../public/css/fonts/montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face {
 	font-family: Montserrat_Bold;
-	src: url('/css/fonts/montserrat/Montserrat-Bold.ttf');
+	src: url('../../public/css/fonts/montserrat/Montserrat-Bold.ttf');
 }
 
 @mixin noselect() {
