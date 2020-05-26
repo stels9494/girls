@@ -11425,6 +11425,7 @@ header .right {
 
 header .right .nav {
   display: inline-block;
+  white-space: nowrap;
 }
 
 header .right .nav .active {

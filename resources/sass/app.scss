@@ -218,6 +218,7 @@ header {
 
 		.nav {
 			display: inline-block;
+			white-space: nowrap;
 
 			.active {
 				position: relative;
