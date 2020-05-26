@@ -13,7 +13,7 @@
 				</div>
 			</div>
 
-			<form id="filter" class="filter row" style="display: none;" action="#" method="get" data-type="ajax{{-- http --}}">
+			<form id="filter" class="filter row" style="display: none;" action="/filter" method="get" data-type="ajax{{-- http --}}">
 				<div class="col-md-4 col-lg-3 order-1">
 					<label for="input-age-from">Возраст</label>
 					<div class="range">
@@ -202,7 +202,7 @@
 
 			@for ($i = 0; $i < 10; $i++)
 				<div class="item col-12 col-sm-6 col-md-4 col-lg-3">
-					<a href="#">
+					<a href="/show">
 						<div class="img" style="background-image: url(/img/test-girl.png)"></div>
 						<div class="name">Kalika, 21</div>
 						<div class="params">
@@ -226,7 +226,9 @@
 		</div>
 		<div class="row">
 			<div class="col-12 show-more">
-				<button class="btn btn-transparent">Show more</button>
+				<form id="show-more" action="/show-more" method="get">
+					<button class="btn btn-transparent" type="submit">Show more</button>
+				</form>
 			</div>
 		</div>
 	</div>

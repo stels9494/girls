@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('index', 'index');
-Route::view('show', 'show');
+Route::view('/', 'index');
+Route::view('/show', 'show');
+Route::view('/filter', 'includes.girl-card', ['count' => 15]);
+Route::view('/show-more', 'includes.girl-card', ['count' => 10]);
+Route::view('/feedbacks', 'includes.feedback', ['count' => 5]);

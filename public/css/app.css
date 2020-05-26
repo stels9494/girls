@@ -11281,6 +11281,10 @@ a.text-dark:focus {
 }
 
 .skills > * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: inline-block;
   font-size: 13px;
   background-color: #404040;

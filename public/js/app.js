@@ -31904,7 +31904,7 @@ $(document).ready(function () {
     $('.filter-panel .filter input').val('');
     $('.filter-panel .filter select option:first-child').prop('selected', true);
   });
-  /* запросить еще девочек */
+  /* фильтр */
 
   $('form.filter').submit(function (e) {
     var type = $(this).data('type');
@@ -31912,14 +31912,33 @@ $(document).ready(function () {
     if (type == 'ajax') {
       e.preventDefault();
       console.log('ajax');
-      var url = $(this).attr('action');
-      var method = $(this).attr('method');
       $(this).ajaxSubmit({
         target: $('.items')
       });
     } else if (type == 'http') {
       console.log('http');
     }
+  });
+  /* еще девочки */
+
+  $('#show-more').submit(function (e) {
+    e.preventDefault();
+    $(this).ajaxSubmit({
+      success: function success(data) {
+        console.log('asdasd');
+        $('.items').append(data);
+      }
+    });
+  });
+  /* запросить еще отзывы */
+
+  $('#get-feedbacks').submit(function (e) {
+    e.preventDefault();
+    $(this).ajaxSubmit({
+      success: function success(data) {
+        $('.reviews').append(data);
+      }
+    });
   });
   /* удаление выбранной услуги */
 

@@ -2,10 +2,10 @@
 
 @section('content')
 	<section id="show-main">
-		<button class="btn btn-white btn-back">
+		<a href="/" class="btn btn-white btn-back">
 			<img src="/img/arrow-back.svg">
 			<span class="d-none d-md-inline">Back</span>
-		</button>
+		</a>
 		<div class="slider">
 			<div class="photos">
 				<div class="photo" style="background-image: url(/img/test-girl-2.png)"></div>
@@ -119,7 +119,9 @@
 					</div>
 				</div>
 				<div class="col-12 text-center btn-all-block">
-					<button class="all btn btn-transparent">All</button>
+					<form id="get-feedbacks" action="/feedbacks" method="get">
+						<button class="all btn btn-transparent" type="submit">All</button>
+					</form>
 				</div>
 			</div>
 		</div>
