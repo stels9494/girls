@@ -80,7 +80,7 @@
 							</div>
 						</div>
 						<div class="order">
-							<button class="btn btn-red form-control">Order</button>
+							<a href="/order" class="btn btn-red form-control">Order</a>
 						</div>
 					</div>
 				</div>

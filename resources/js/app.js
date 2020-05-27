@@ -147,4 +147,27 @@ $(document).ready(function () {
 			$(this).addClass('in-favorite');
 		}
 	});
+
+	$('.next-step').click(function (e) {
+		e.preventDefault();
+		$('#reservation-form').submit();
+	})
+
+	$('.mobile-menu').click(function (e) {
+		e.preventDefault();
+
+
+		if ($(this).hasClass('open'))
+		{
+			$(this).removeClass('open');
+			$('.mobile-menu-list').slideUp();
+			// $(this).parents('.filter-panel').find('.filter').slideDown();
+		} else {
+			$(this).addClass('open');
+			$('.mobile-menu-list').slideDown();
+			// $(this).parents('.filter-panel').find('.filter').slideUp();
+		}
+
+
+	});
 })
