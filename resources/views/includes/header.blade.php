@@ -23,7 +23,7 @@
 <div class="mobile-menu-list d-md-none col-12" style="display: none;">
 	<a class="link" href="/">Main</a>
 	<a class="link" href="/">Girls</a>
-	<a class="link" href="/"><img src="/img/favorite.svg"> Favorite</a>
-	<a class="link" href="/"><img src="/img/user.svg"> Profile</a>
+	<a class="link" href="/">{{-- <img src="/img/favorite.svg"> --}} Favorite</a>
+	<a class="link" href="/">{{-- <img src="/img/user.svg"> --}} Profile</a>
 	<a class="link" href="/order"><span class="order">Order:</span> Alina Morder, 19</a>
 </div>
